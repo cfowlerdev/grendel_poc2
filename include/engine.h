@@ -1,23 +1,18 @@
 #pragma once
 #include <string>
-#include "opengl/window.h"
-#include "opengl/program.h"
-
+#define GL_GLEXT_PROTOTYPES
+#define EGL_EGLEXT_PROTOTYPES
+#include <GL/gl.h>
+#include <GLFW/glfw3.h>
 
 class Engine {
 public:
-    void init(const std::string &p_title, const int &p_width, const int &p_height);
-
-    void onUpdate();
-
-    void loadEntities();
-
+    Engine(const std::string &p_title, const int &p_width, const int &p_height);
+    ~Engine();
+    
+    GLFWwindow *windowId;
+    int width;
+    int height;
 private:
-    Window *_window;
-    Program *_program;
-
-    int _width;
-    int _height;
-
-
+    
 };
