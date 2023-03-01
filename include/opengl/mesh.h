@@ -7,7 +7,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtx/hash.hpp>
-#include "opengl/program.h"
+#include "shaders/program.h"
 #include "opengl/vertexarray.h"
 #include "opengl/vertexbuffer.h"
 #include "opengl/indexbuffer.h"

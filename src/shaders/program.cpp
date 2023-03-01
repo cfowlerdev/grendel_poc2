@@ -1,5 +1,5 @@
 #include <iostream>
-#include "opengl/program.h"
+#include "shaders/program.h"
 
 Program *Program::currentProgram = nullptr;
 

@@ -1,6 +1,6 @@
 #include <iostream>
 #include "entity.h"
-#include "opengl/shader.h"
+#include "shaders/shader.h"
 
 Entity::Entity(const unsigned int& p_id, const std::string& p_name, const std::string& p_icon, const glm::vec2& p_position)
     : id(p_id), name(p_name), icon(p_icon), position(p_position)

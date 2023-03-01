@@ -2,7 +2,7 @@
 #include <string>
 #include <glm/glm.hpp>
 #include "opengl/texture2d.h"
-#include "opengl/program.h"
+#include "shaders/program.h"
 #include "opengl/shapes/quad.h"
 
 class Entity

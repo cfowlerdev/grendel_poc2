@@ -5,7 +5,7 @@
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-#include "program.h"
+#include "shaders/program.h"
 #include "mesh.h"
 
 class Model

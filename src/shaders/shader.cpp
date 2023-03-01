@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include "opengl/shader.h"
+#include "shaders/shader.h"
 
 Shader::Shader(const std::string& p_filename, GLenum shaderType)
     : _shaderType(shaderType)
