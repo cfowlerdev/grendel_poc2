@@ -1,4 +1,4 @@
-#include "opengl/camera.h"
+#include "objects/camera.h"
 
 Camera::Camera(glm::vec3 position, glm::vec3 up, GLfloat yaw, GLfloat pitch)
     : position(position), worldUp(up), yaw(yaw), pitch(pitch)

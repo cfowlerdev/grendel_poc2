@@ -14,8 +14,10 @@
 // ===========================================
 // EMSCRIPTEN MAIN LOOP
 // ===========================================
+std::function<void()> loop;
 void main_loop()
 {
+    loop();
 }
 
 int main(int argc, char **argv)
@@ -25,5 +27,8 @@ int main(int argc, char **argv)
     Engine engine("Grendel", WINDOW_WIDTH, WINDOW_HEIGHT);
 
     std::cout << "Entering main loop" << std::endl;
+    loop = [&] {
+        engine.render();
+    };
     emscripten_set_main_loop(&main_loop, 0, true);
 }

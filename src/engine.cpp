@@ -106,6 +106,10 @@ Engine::Engine(const std::string &p_title, const int &p_width, const int &p_heig
 
     // configure global opengl state
     glEnable(GL_DEPTH_TEST);
+
+    // Initialize the master renderer
+    m_Camera = new Camera();
+    m_Renderer = new Renderer();
 }
 
 Engine::~Engine()
@@ -113,4 +117,7 @@ Engine::~Engine()
     glfwTerminate();
 }
 
-
+void Engine::render()
+{
+    m_Renderer->render(*m_Camera);
+}
